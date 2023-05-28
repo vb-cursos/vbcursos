@@ -4,7 +4,7 @@ import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['https://vbcursos-site.onrender.com']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -19,7 +19,7 @@ CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.getenv("CLOUDINARY_URL"),
 }
 
-CSRF_TRUSTED_ORIGINS = ["https://portfoliosite-production.up.railway.app",'127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ["https://vbcursos-site.onrender.com",'127.0.0.1']
 
 # HTTPS settings
 
