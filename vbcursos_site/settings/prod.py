@@ -2,9 +2,9 @@ from .base import *
 import dj_database_url
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://vbcursos-site.onrender.com']
+ALLOWED_HOSTS = ['https://vbcursos-site.onrender.com', '3.134.238.10','3.129.111.220','52.15.118.168']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -19,7 +19,7 @@ CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.getenv("CLOUDINARY_URL"),
 }
 
-CSRF_TRUSTED_ORIGINS = ["https://vbcursos-site.onrender.com",'127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://vbcursos-site.onrender.com','3.134.238.10','3.129.111.220','52.15.118.168']
 
 # HTTPS settings
 
