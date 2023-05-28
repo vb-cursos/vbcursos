@@ -4,7 +4,7 @@ import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://vbcursos-site.onrender.com', '3.134.238.10','3.129.111.220','52.15.118.168']
+ALLOWED_HOSTS = ['vbcursos-site.onrender.com','3.134.238.10','3.129.111.220','52.15.118.168']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
