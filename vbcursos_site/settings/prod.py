@@ -4,7 +4,7 @@ import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vbcursos-site.onrender.com','3.134.238.10','3.129.111.220','52.15.118.168']
+ALLOWED_HOSTS = ['vbcursos-site.onrender.com','3.134.238.10','3.129.111.220','127.0.0.1']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -12,14 +12,16 @@ ALLOWED_HOSTS = ['vbcursos-site.onrender.com','3.134.238.10','3.129.111.220','52
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 DATABASES = {
-    'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
+    'default': dj_database_url.parse('postgres://site_vbcursos_user:nKN8Ke9CbQMSQ4MjjtAfUamlr6XeMDiD@dpg-chptlsik728ivvpvdml0-a.ohio-postgres.render.com/site_vbcursos')
 }
 
+'''
 CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.getenv("CLOUDINARY_URL"),
 }
+'''
 
-CSRF_TRUSTED_ORIGINS = ['https://vbcursos-site.onrender.com','3.134.238.10','3.129.111.220','52.15.118.168']
+CSRF_TRUSTED_ORIGINS = ['https://vbcursos-site.onrender.com','http://127.0.0.1']
 
 # HTTPS settings
 
